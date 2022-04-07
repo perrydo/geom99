@@ -41,7 +41,8 @@
 
         var coniferous = L.layerGroup();
 
-        var geoJsondata = new L.geoJSON('treedata2.geojson', {
+        var geojsondata = new L.GeoJSON.AJAX('treedata2.geojson', {
+            coordsToLatLng: function();,
             pointToLayer: function(feature, latlng) {return L.marker(latlng);}
         }).addTo(coniferous);
 
