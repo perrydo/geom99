@@ -39,7 +39,7 @@
         }).addTo(map);
         // you can change map style using id https://docs.mapbox.com/api/maps/styles/
 
-        var geoJsondata = new L.geoJSON("treedata.geojson", {function(geoJsonPoint, latlng) {
+        var geoJsondata = new L.geoJSON("treedata2.geojson", {function(geoJsonPoint, latlng) {
             return L.marker(latlng);
         }}).addTo(map);
 
