@@ -42,7 +42,7 @@
 
         var coniferous = L.layerGroup();
 
-        var geojsondata = L.GeoJSON.AJAX("treedata2.geojson").addTo(coniferous);
+        var geojsondata = new L.GeoJSON.AJAX("treedata2.geojson").addTo(coniferous);
 
     </script>
 
