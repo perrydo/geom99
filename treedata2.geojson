@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Significant Trees",
+"features": [
+{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.484593, 43.696533, 0.0]}, "properties": {"What_is_the_species_name": "Maple"}},
+{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.433099, 43.846487, 0.0]}, "properties": {"What_is_the_species_name": "Pine"}}
+]
+}
