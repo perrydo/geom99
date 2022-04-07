@@ -40,7 +40,7 @@
         }).addTo(map);
         // you can change map style using id https://docs.mapbox.com/api/maps/styles/
 
-        var coniferous = L.layerGroup();
+        var coniferous = L.layerGroup().addTo(map);
 
         var geojsondata = new L.GeoJSON.AJAX("treedata2.geojson", {
         pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng);}}).addTo(coniferous);
