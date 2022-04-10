@@ -68,7 +68,7 @@
             pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
             onEachFeature: function (feature, layer) {
                 layer.bindPopup('<b><center> Species:' + feature.properties.What_is_the_species_name + 
-                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=Significant%5FTreesp%2Fattachments%2F'+ 
+                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/Fattachments/'+ 
                 feature.properties.Pics + '"' +' style="height:200px;">' + '<br>');}}).addTo(coniferous);
 
         var geojsondata3 = new L.GeoJSON.AJAX("treedata2.geojson", {
@@ -80,7 +80,7 @@
             pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng);},
             onEachFeature: function (feature, layer) {
                 layer.bindPopup('<b><center> Species:' + feature.properties.What_is_the_species_name + 
-                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=Significant_Treesp%2Fattachments%2F'+ 
+                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
                 feature.properties.Pics + '"' +' style="height:200px;">' + '<br>');}}).addTo(deciduous);
 
         // Filter
