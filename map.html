@@ -54,12 +54,16 @@
 
         // Filter
 
+        var basemap = {
+            "Basemap": tiles
+        }
+
         var choices = {
             "Coniferous": coniferous,
             "Deciduous": deciduous
         }
 
-        var filers = L.control.layers(choices).addTo(map);
+        var filter = L.control.layers(basemap, choices).addTo(map);
 
     </script>
 
