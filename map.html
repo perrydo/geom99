@@ -12,7 +12,6 @@
     crossorigin=""></script>
     <!-- AJAX plug in is needed to read the external geoJSON file correctly -->
     <script src="leaflet.ajax.js"></script>
-    <!-- Leaflet-SVGIcon plug-in to customize marker colour -->
     <script src="svg-icon.js"></script>
 
     <style>
@@ -29,7 +28,7 @@
 <body>
     <div id="map"></div>
     <script>
-        // Setting up base map
+        // setting up base map
 
         var map = L.map('map', {doubleClickZoom: false}).locate({setView: true, maxZoom: 11});
 
@@ -44,13 +43,20 @@
         }).addTo(map);
         // you can change map style using id https://docs.mapbox.com/api/maps/styles/
 
-        // End of setting up base map
+        // end of setting up base map
 
-        // Setting up marker styles: https://github.com/iatkin/leaflet-svgicon
+        // marker styles: https://github.com/pointhi/leaflet-color-markers
 
-        var greenIcon = new L.Marker.SVGMarker(latlng, { iconOptions: { color: "rgb(42, 173, 39)" }});
+        var greenIcon = new L.Icon({
+            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
 
-        // End of setting up marker styles
+
 
         var coniferous = L.layerGroup().addTo(map);
         var deciduous = L.layerGroup().addTo(map);
@@ -59,11 +65,11 @@
             filter: function(feature) { return feature.properties.What_is_the_species_name == "Pine"},
             pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});}}).addTo(coniferous);
 
-        var geojsondata2 = new L.GeoJSON.AJAX("treedata2.geojson", {
+        var geojsondata1 = new L.GeoJSON.AJAX("treedata2.geojson", {
             filter: function(feature) { return feature.properties.What_is_the_species_name == "Maple"},
             pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng);}}).addTo(deciduous);
 
-        // Setting up filter
+        // Filter
 
         var basemap = {
             "Basemap": tiles
@@ -75,8 +81,6 @@
         }
 
         var filter = L.control.layers(basemap, choices).addTo(map);
-
-        // End of setting up filter
 
     </script>
 
