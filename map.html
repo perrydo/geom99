@@ -12,8 +12,6 @@
     crossorigin=""></script>
     <!-- AJAX plug in is needed to read the external geoJSON file correctly -->
     <script src="leaflet.ajax.js"></script>
-    <script src="svg-icon.js"></script>
-
     <style>
         html,
         body,
@@ -66,7 +64,7 @@
             pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});}}).addTo(coniferous);
 
         var geojsondata2 = new L.GeoJSON.AJAX("treedata2.geojson", {
-            filter: function(feature) { return feature.properties.What_is_the_species_name == "Maple"},
+            filter: function(feature) { return feature.properties.What_is_the_species_name == "Maple", "Oak"},
             pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng);}}).addTo(deciduous);
 
         // Filter
