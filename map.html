@@ -65,7 +65,7 @@
         
         var geojsondata2 = new L.GeoJSON.AJAX("treedata2.geojson", {
             filter: function(feature) { return feature.properties.What_is_the_species_name == "Cedar"},
-            pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng);},
+            pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
             onEachFeature: function (feature, layer) {
                 layer.bindPopup('<b><center> Species:' + feature.properties.What_is_the_species_name + 
                 '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=Significant%5FTreesp%2Fattachments%2F'+ 
