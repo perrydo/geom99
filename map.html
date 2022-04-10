@@ -21,6 +21,11 @@
             height: 100%;
             width: 100%;
         }
+
+        marker.huechange {
+            filter: hue-rotate(120deg);
+        }
+
     </style>
 </head>
 <body>
@@ -67,6 +72,8 @@
             filter: function(feature) { return feature.properties.What_is_the_species_name == "Maple"},
             pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng);}}).addTo(deciduous);
 
+        marker._icon.classList.add("huechange");
+        
         // Filter
 
         var basemap = {
