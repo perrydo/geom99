@@ -67,9 +67,9 @@
             filter: function(feature) { return feature.properties.What_is_the_species_name == "Cedar"},
             pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
             onEachFeature: function (feature, layer) {
-                layer.bindPopup('<b><center> Species:' + feature.properties.What_is_the_species_name + 
-                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/Fattachments/'+ 
-                feature.properties.Pics + '"' +' style="height:200px;">' + '<br>');}}).addTo(coniferous);
+                layer.bindPopup('<b><center> Species: ' + feature.properties.What_is_the_species_name + '<br>' +
+                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
+                feature.properties.Pics + '"' +' style="height:200px;">' );}}).addTo(coniferous);
 
         var geojsondata3 = new L.GeoJSON.AJAX("treedata2.geojson", {
             filter: function(feature) { return feature.properties.What_is_the_species_name == "Maple"},
@@ -79,7 +79,7 @@
             filter: function(feature) { return feature.properties.What_is_the_species_name == "Oak"},
             pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng);},
             onEachFeature: function (feature, layer) {
-                layer.bindPopup('<b><center> Species:' + feature.properties.What_is_the_species_name + 
+                layer.bindPopup('<b><center> Species: ' + feature.properties.What_is_the_species_name + '<br>' +
                 '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
                 feature.properties.Pics + '"' +' style="height:200px;">' + '<br>');}}).addTo(deciduous);
 
