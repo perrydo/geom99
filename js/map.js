@@ -31,7 +31,7 @@ var deciduous = L.layerGroup().addTo(map);
 // setting up data input for coniferous layers 
 var geojsondata1 = new L.GeoJSON.AJAX("treedata.geojson", {
     filter: function(feature) { return feature.properties.species == "Balsam fir"},
-    pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
+    pointToLayer: function(_geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
@@ -129,7 +129,7 @@ var geojsondata12 = new L.GeoJSON.AJAX("treedata.geojson", {
 
 var geojsondata13 = new L.GeoJSON.AJAX("treedata.geojson", {
     filter: function(feature) { return feature.properties.What_is_the_species_name == "Alternate-leaf dogwood"},
-    pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
+    pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng);},
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
