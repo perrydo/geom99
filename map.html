@@ -53,6 +53,9 @@
             shadowSize: [41, 41]
         });
 
+        var coniferous = L.layerGroup().addTo(map);
+        var deciduous = L.layerGroup().addTo(map);
+
         var geojsondata7 = new L.GeoJSON.AJAX("treedata.geojson", {
             filter: function(feature) { return feature.properties.What_is_the_species_name == "Jack pine"},
             pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
