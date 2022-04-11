@@ -53,8 +53,60 @@
             shadowSize: [41, 41]
         });
 
+        // end of setting up marker
+
+        // setting up coniferous and deciduous layers
         var coniferous = L.layerGroup().addTo(map);
         var deciduous = L.layerGroup().addTo(map);
+
+        // setting up data input for coniferous layers 
+        var geojsondata1 = new L.GeoJSON.AJAX("treedata.geojson", {
+            filter: function(feature) { return feature.properties.species == "Balsam fir"},
+            pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
+                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
+                feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
+
+        var geojsondata2 = new L.GeoJSON.AJAX("treedata.geojson", {
+            filter: function(feature) { return feature.properties.species == "Black spruce"},
+            pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
+                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
+                feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
+
+        var geojsondata3 = new L.GeoJSON.AJAX("treedata.geojson", {
+            filter: function(feature) { return feature.properties.species == "Eastern hemlock"},
+            pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
+                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
+                feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
+            
+        var geojsondata4 = new L.GeoJSON.AJAX("treedata.geojson", {
+            filter: function(feature) { return feature.properties.species == "Eastern redcedar"},
+            pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
+                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
+                feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
+
+        var geojsondata5 = new L.GeoJSON.AJAX("treedata.geojson", {
+            filter: function(feature) { return feature.properties.species == "Eastern white cedar"},
+            pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
+                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
+                feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
+
+        var geojsondata6 = new L.GeoJSON.AJAX("treedata.geojson", {
+            filter: function(feature) { return feature.properties.species == "Eastern white pine"},
+            pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
+                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
+                feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
 
         var geojsondata7 = new L.GeoJSON.AJAX("treedata.geojson", {
             filter: function(feature) { return feature.properties.species == "Jack pine"},
@@ -63,14 +115,78 @@
                 layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
                 '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
                 feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
-        
-        var geojsondata6 = new L.GeoJSON.AJAX("treedata.geojson", {
-            filter: function(feature) { return feature.properties.species == "Eastern white pine"},
+
+        var geojsondata8 = new L.GeoJSON.AJAX("treedata.geojson", {
+            filter: function(feature) { return feature.properties.What_is_the_species_name == "Pitch pine"},
             pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
             onEachFeature: function (feature, layer) {
                 layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
                 '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
                 feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
+
+        var geojsondata9 = new L.GeoJSON.AJAX("treedata.geojson", {
+            filter: function(feature) { return feature.properties.What_is_the_species_name == "Red pine"},
+            pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
+                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
+                feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
+
+        var geojsondata10 = new L.GeoJSON.AJAX("treedata.geojson", {
+            filter: function(feature) { return feature.properties.species == "Red spruce"},
+            pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
+                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
+                feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
+
+        var geojsondata11 = new L.GeoJSON.AJAX("treedata.geojson", {
+            filter: function(feature) { return feature.properties.species == "Tamarack"},
+            pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
+                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
+                feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
+
+        var geojsondata12 = new L.GeoJSON.AJAX("treedata.geojson", {
+            filter: function(feature) { return feature.properties.species == "White spruce"},
+            pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
+                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
+                feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
+
+        // setting up data input for deciduous layer
+
+        var geojsondata13 = new L.GeoJSON.AJAX("treedata.geojson", {
+            filter: function(feature) { return feature.properties.species == "Alternate-leaf dogwood"},
+            pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng);},
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
+                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
+                feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(deciduous);
+
+
+
+
+
+
+
+
+
+
+        // Filter
+
+        var basemap = {
+            "Basemap": tiles
+        };
+
+        var choices = {
+            "Coniferous": coniferous,
+            "Deciduous": deciduous
+        };
+
+        var filter = L.control.layers(basemap, choices).addTo(map);
     </script>
 </body>
 </htm>
