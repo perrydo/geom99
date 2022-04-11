@@ -7,6 +7,7 @@
 {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.273496, 43.681588, 0.0]}, "properties": {"start": "2022-04-10T03:38:10.004-04:00", "end": "2022-04-10T03:38:35.458-04:00", "What_is_the_species_name": "Cedar", "Pics": "16-165436_watercolor-purple-flowers-vector-clipart-violet-clipart-3_38_32.png"}},
 {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.38298, 43.619611, 0.0]}, "properties": {"start": "2022-04-10T20:08:25.343-04:00", "end": "2022-04-10T20:09:16.829-04:00", "What_is_the_species_name": "Pine", "Pics": "FNnJmIFXoAYi1IE-20_9_14.jfif"}},
 {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.513202, 43.591967, 0.0]}, "properties": {"start": "2022-04-10T20:09:16.870-04:00", "end": "2022-04-10T20:09:58.128-04:00", "What_is_the_species_name": "Maple", "Pics": "taylor-swift-willow-Cover-Art-20_9_55.png"}},
-{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.540999, 43.603615, 0.0]}, "properties": {"start": "2022-04-11T02:27:56.992-04:00", "end": "2022-04-11T02:28:29.661-04:00", "What_is_the_species_name": "Pine", "Pics": "Emilia-Jones-in-CODA-1-2_28_25.png"}}
+{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.540999, 43.603615, 0.0]}, "properties": {"start": "2022-04-11T02:27:56.992-04:00", "end": "2022-04-11T02:28:29.661-04:00", "What_is_the_species_name": "Pine", "Pics": "Emilia-Jones-in-CODA-1-2_28_25.png"}},
+{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.447149, 43.769569, 0.0]}, "properties": {"start": "2022-04-11T02:38:12.622-04:00", "end": "2022-04-11T02:38:49.149-04:00", "species": "Eastern white pine", "What_is_the_species_name": "Pine", "Pics": "zPrFJjg-2_38_40.jpg", "comments": "it's cute"}}
 ]
 }
