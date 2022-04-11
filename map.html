@@ -64,7 +64,7 @@
                 '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
                 feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
         
-                var geojsondata6 = new L.GeoJSON.AJAX("treedata.geojson", {
+        var geojsondata6 = new L.GeoJSON.AJAX("treedata.geojson", {
             filter: function(feature) { return feature.properties.species == "Eastern white pine"},
             pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
             onEachFeature: function (feature, layer) {
