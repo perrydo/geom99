@@ -2,10 +2,10 @@
 "type": "FeatureCollection",
 "name": "Significant Native Trees in Ontario",
 "features": [
-{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.504121, 43.698453, 0.0]}, "properties": {"start": "2022-04-11T02:05:14.189-04:00", "end": "2022-04-11T02:05:58.726-04:00", "species": "Eastern white pine", "comments": "it's cute", "pics": "taylor-swift-willow-Cover-Art-20_9_55.png"}},
-{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.402631, 43.708536, 0.0]}, "properties": {"start": "2022-04-11T02:13:36.113-04:00", "end": "2022-04-11T02:14:12.519-04:00", "species": "Eastern white pine", "pics": "zPrFJjg-2_38_40.jpg", "comments": "it's cute"}},
 {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.498557, 43.701845, 0.0]}, "properties": {"start": "2022-04-11T02:53:00.344-04:00", "end": "2022-04-11T02:53:33.695-04:00", "species": "Eastern white pine", "photo": "piooX9oiE-2_53_31.png"}},
 {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.455251, 43.62022, 0.0]}, "properties": {"start": "2022-04-11T03:00:06.865-04:00", "end": "2022-04-11T03:00:42.687-04:00", "species": "Eastern white pine", "photo": "redcyan3d2-3_0_36.png", "comments": "it's cute"}},
-{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.339961, 43.618387, 0.0]}, "properties": {"start": "2022-04-11T03:00:42.748-04:00", "end": "2022-04-11T03:19:20.320-04:00", "species": "American chestnut", "photo": "periwinkle-flower-1444754067-600x360-3_19_11.jpg", "comments": "it's perfect"}}
+{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.339961, 43.618387, 0.0]}, "properties": {"start": "2022-04-11T03:00:42.748-04:00", "end": "2022-04-11T03:19:20.320-04:00", "species": "American chestnut", "photo": "periwinkle-flower-1444754067-600x360-3_19_11.jpg", "comments": "it's perfect"}},
+{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.535503, 43.624197, 0.0]}, "properties": {"start": "2022-04-11T03:19:20.371-04:00", "end": "2022-04-11T04:00:44.714-04:00", "species": "Tamarack", "photo": "FNnJmIFXoAYi1IE-4_0_32.jfif"}},
+{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.556062, 43.696527, 0.0]}, "properties": {"start": "2022-04-11T04:00:44.767-04:00", "end": "2022-04-11T04:01:23.350-04:00", "species": "Striped maple", "photo": "image_processing20200423-30831-2gryph-4_1_20.png"}}
 ]
 }
