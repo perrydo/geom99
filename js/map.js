@@ -38,7 +38,7 @@ var geojsondata1 = new L.GeoJSON.AJAX("treedata.geojson", {
         feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
 
 var geojsondata2 = new L.GeoJSON.AJAX("treedata.geojson", {
-    filter: function(feature) { return feature.properties.What_is_the_species_name == "Black spruce"},
+    filter: function(feature) { return feature.properties.species == "Black spruce"},
     pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
@@ -46,7 +46,7 @@ var geojsondata2 = new L.GeoJSON.AJAX("treedata.geojson", {
         feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
 
 var geojsondata3 = new L.GeoJSON.AJAX("treedata.geojson", {
-    filter: function(feature) { return feature.properties.What_is_the_species_name == "Eastern hemlock"},
+    filter: function(feature) { return feature.properties.species == "Eastern hemlock"},
     pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
@@ -54,7 +54,7 @@ var geojsondata3 = new L.GeoJSON.AJAX("treedata.geojson", {
         feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
     
 var geojsondata4 = new L.GeoJSON.AJAX("treedata.geojson", {
-    filter: function(feature) { return feature.properties.What_is_the_species_name == "Eastern redcedar"},
+    filter: function(feature) { return feature.properties.species == "Eastern redcedar"},
     pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
@@ -62,7 +62,7 @@ var geojsondata4 = new L.GeoJSON.AJAX("treedata.geojson", {
         feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
 
 var geojsondata5 = new L.GeoJSON.AJAX("treedata.geojson", {
-    filter: function(feature) { return feature.properties.What_is_the_species_name == "Eastern white cedar"},
+    filter: function(feature) { return feature.properties.species == "Eastern white cedar"},
     pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
@@ -70,7 +70,7 @@ var geojsondata5 = new L.GeoJSON.AJAX("treedata.geojson", {
         feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
 
 var geojsondata6 = new L.GeoJSON.AJAX("treedata.geojson", {
-    filter: function(feature) { return feature.properties.What_is_the_species_name == "Eastern white pine"},
+    filter: function(feature) { return feature.properties.species == "Eastern white pine"},
     pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
@@ -78,7 +78,7 @@ var geojsondata6 = new L.GeoJSON.AJAX("treedata.geojson", {
         feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
 
 var geojsondata7 = new L.GeoJSON.AJAX("treedata.geojson", {
-    filter: function(feature) { return feature.properties.What_is_the_species_name == "Jack pine"},
+    filter: function(feature) { return feature.properties.species == "Jack pine"},
     pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
@@ -102,7 +102,7 @@ var geojsondata9 = new L.GeoJSON.AJAX("treedata.geojson", {
         feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
 
 var geojsondata10 = new L.GeoJSON.AJAX("treedata.geojson", {
-    filter: function(feature) { return feature.properties.What_is_the_species_name == "Red spruce"},
+    filter: function(feature) { return feature.properties.species == "Red spruce"},
     pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
@@ -110,7 +110,7 @@ var geojsondata10 = new L.GeoJSON.AJAX("treedata.geojson", {
         feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
 
 var geojsondata11 = new L.GeoJSON.AJAX("treedata.geojson", {
-    filter: function(feature) { return feature.properties.What_is_the_species_name == "Tamarack"},
+    filter: function(feature) { return feature.properties.species == "Tamarack"},
     pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
@@ -118,7 +118,7 @@ var geojsondata11 = new L.GeoJSON.AJAX("treedata.geojson", {
         feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
 
 var geojsondata12 = new L.GeoJSON.AJAX("treedata.geojson", {
-    filter: function(feature) { return feature.properties.What_is_the_species_name == "White spruce"},
+    filter: function(feature) { return feature.properties.species == "White spruce"},
     pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
@@ -128,7 +128,7 @@ var geojsondata12 = new L.GeoJSON.AJAX("treedata.geojson", {
 // setting up data input for deciduous layer
 
 var geojsondata13 = new L.GeoJSON.AJAX("treedata.geojson", {
-    filter: function(feature) { return feature.properties.What_is_the_species_name == "Alternate-leaf dogwood"},
+    filter: function(feature) { return feature.properties.species == "Alternate-leaf dogwood"},
     pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng);},
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +

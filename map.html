@@ -25,8 +25,8 @@
 </head>
 <body>
     <div id="map"></div>
-    <!-- <script src="js/map.js"></script> -->
-    <script>
+    <script src="js/map.js"></script>
+    <!-- <script>
 
         // setting up base map
         var map = L.map('map', {doubleClickZoom: false}).locate({setView: true, maxZoom: 11});
@@ -57,12 +57,12 @@
         var deciduous = L.layerGroup().addTo(map);
 
         var geojsondata7 = new L.GeoJSON.AJAX("treedata.geojson", {
-            filter: function(feature) { return feature.properties.What_is_the_species_name == "Jack pine"},
+            filter: function(feature) { return feature.properties.species == "Jack pine"},
             pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
             onEachFeature: function (feature, layer) {
                 layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
                 '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
                 feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
-    </script>
+    </script> -->
 </body>
 </htm>
