@@ -1,10 +1,11 @@
 {
 "type": "FeatureCollection",
-"name": "Significant Trees",
+"name": "significanttrees",
 "features": [
 {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.484593, 43.696533, 0.0]}, "properties": {"start": "2022-04-05T03:01:40.827-04:00", "end": "2022-04-05T03:01:52.908-04:00", "What_is_the_species_name": "Maple"}},
-{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.433099, 43.846487, 0.0]}, "properties": {"start": "2022-04-05T14:27:41.760-04:00", "end": "2022-04-05T14:28:15.750-04:00", "What_is_the_species_name": "Pine"}},
 {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.33741, 43.675259, 0.0]}, "properties": {"start": "2022-04-05T14:28:15.787-04:00", "end": "2022-04-10T03:13:58.979-04:00", "What_is_the_species_name": "Oak", "Pics": "Y20OKC7-3_13_56.jpg"}},
-{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.273496, 43.681588, 0.0]}, "properties": {"start": "2022-04-10T03:38:10.004-04:00", "end": "2022-04-10T03:38:35.458-04:00", "What_is_the_species_name": "Cedar", "Pics": "16-165436_watercolor-purple-flowers-vector-clipart-violet-clipart-3_38_32.png"}}
+{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.273496, 43.681588, 0.0]}, "properties": {"start": "2022-04-10T03:38:10.004-04:00", "end": "2022-04-10T03:38:35.458-04:00", "What_is_the_species_name": "Cedar", "Pics": "16-165436_watercolor-purple-flowers-vector-clipart-violet-clipart-3_38_32.png"}},
+{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.38298, 43.619611, 0.0]}, "properties": {"start": "2022-04-10T20:08:25.343-04:00", "end": "2022-04-10T20:09:16.829-04:00", "What_is_the_species_name": "Pine", "Pics": "FNnJmIFXoAYi1IE-20_9_14.jfif"}},
+{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.513202, 43.591967, 0.0]}, "properties": {"start": "2022-04-10T20:09:16.870-04:00", "end": "2022-04-10T20:09:58.128-04:00", "What_is_the_species_name": "Maple", "Pics": "taylor-swift-willow-Cover-Art-20_9_55.png"}}
 ]
 }
