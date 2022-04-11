@@ -166,11 +166,29 @@
                 '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
                 feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(deciduous);
 
+        var geojsondata14 = new L.GeoJSON.AJAX("treedata.geojson", {
+            filter: function(feature) { return feature.properties.species == "American beech"},
+            pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng);},
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
+                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
+                feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(deciduous);
 
+        var geojsondata15 = new L.GeoJSON.AJAX("treedata.geojson", {
+            filter: function(feature) { return feature.properties.species == "American chestnut"},
+            pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng);},
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
+                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
+                feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(deciduous);
 
-
-
-
+        var geojsondata16 = new L.GeoJSON.AJAX("treedata.geojson", {
+            filter: function(feature) { return feature.properties.species == "American elm"},
+            pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng);},
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
+                '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
+                feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(deciduous);
 
 
 
