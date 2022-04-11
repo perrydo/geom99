@@ -71,11 +71,10 @@ var geojsondata5 = new L.GeoJSON.AJAX("treedata.geojson", {
 
 var geojsondata6 = new L.GeoJSON.AJAX("treedata.geojson", {
     filter: function(feature) { return feature.properties.species == "Eastern white pine"},
-    pointToLayer: function(_geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
+    pointToLayer: function(geoJsonPoint, latlng) {return L.marker(latlng, {icon: greenIcon});},
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species: ' + feature.properties.species + '<br>' +
-        '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+ 
-        feature.properties.photo + '" style="height:200px;" >' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
+        '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=perrydo/attachments/'+feature.properties.photo + '"' +' style="height:200px;">' + '<br>' + 'Comments: ' + feature.properties.comments);}}).addTo(coniferous);
 
 var geojsondata7 = new L.GeoJSON.AJAX("treedata.geojson", {
     filter: function(feature) { return feature.properties.species == "Jack pine"},
