@@ -1,12 +1,12 @@
 {
-    "type": "FeatureCollection",
-    "name": "Tree Data - GEOM65",
-    "features": [
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.498557, 43.701845, 0.0]}, "properties": {"species": "Eastern white pine"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.455251, 43.62022, 0.0]}, "properties": {"species": "Eastern white pine", "comments": "it's cute"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.339961, 43.618387, 0.0]}, "properties": {"species": "American chestnut", "comments": "it's perfect"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.535503, 43.624197, 0.0]}, "properties": {"species": "Tamarack"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.556062, 43.696527, 0.0]}, "properties": {"species": "Striped maple"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.55756, 43.717148, 0.0]}, "properties": {"species": "Black oak"}}
-    ]
-    }
+"type": "FeatureCollection",
+"name": "Tree Data - GEOM65",
+"features": [
+{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.4818, 43.9725, 0.0]}, "properties": {"species": "Silver maple", "comments": "Tree planted in memory of Brian Payne"}},
+{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-77.20321051, 43.98967825, 0.0]}, "properties": {"species": "Sugar maple", "comments": "Heritage tree designated by Forests Ontario"}},
+{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-80.4158783, 43.4578231, 0.0]}, "properties": {"species": "Black willow", "comments": "Black willow grows despite significantly dead wood"}},
+{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.4598976, 43.6444775, 0.0]}, "properties": {"species": "White oak", "comments": "Large old oak. Has tag: 27561"}},
+{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-80.49926428, 43.45751441, 0.0]}, "properties": {"species": "Sugar maple", "comments": "Tree has significant street overhang"}},
+{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-78.3669162, 44.2840626, 0.0]}, "properties": {"species": "Eastern white pine", "comments": "Biggest white pine in the area"}}
+]
+}

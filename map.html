@@ -25,7 +25,6 @@
 </head>
 <body>
     <div id="map"></div>
-    <!-- <script src="js/map.js"></script> -->
     <script>
         // setting up base map
         var map = L.map('map', {doubleClickZoom: false}).locate({setView: true, maxZoom: 11});
@@ -630,5 +629,7 @@
 
         var filter = L.control.layers(basemap, choices).addTo(map);
     </script>
+    <!-- Setting up significant tree points from GEOM65 -->
+    <script src="js/map.js"></script>
 </body>
 </htm>
