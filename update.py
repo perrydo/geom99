@@ -1,10 +1,11 @@
-import requests # postman api
-
 # set up filter
 import geojson, json
 from operator import contains
 from shapely.geometry import shape
 from shapely.geometry.point import Point
+
+# postman codes
+# https://web.postman.co/workspace/My-Workspace~953f9657-81e0-4eb2-83c3-7363e50075ff/request/20375094-b8e6047d-6031-452b-94b5-c21d7c9db98f?ctx=code
 
 import requests
 
@@ -26,7 +27,7 @@ ontarioraw = open("ontario.geojson", "r")
 ontario = json.load(ontarioraw)
 treedataraw = open("originaltreedata.geojson", "r")
 treedata = json.load(treedataraw)
-output = open("treedata2.geojson", "w")
+output = open("treedata.geojson", "w")
 
 feature_collection = {"type": "FeatureCollection",
                       "name": "Significant Native Trees in Ontario",
