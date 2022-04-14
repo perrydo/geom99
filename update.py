@@ -6,11 +6,13 @@ from operator import contains
 from shapely.geometry import shape
 from shapely.geometry.point import Point
 
+import requests
+
 url = "https://kobo.humanitarianresponse.info/api/v2/assets/aMuGfJGwdnva8aWdQEp8WW/data/?format=geojson"
 
 payload={}
 headers = {
-  'Authorization': 'Basic eb6da470d80f12db9dd0949b36ccd6dc0ad497ce='
+  'Authorization': 'eb6da470d80f12db9dd0949b36ccd6dc0ad497ce'
 }
 
 response = requests.request('GET', url, headers=headers, data=payload)
