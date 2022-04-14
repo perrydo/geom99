@@ -1,49 +1,45 @@
-# # Update GeoJSON
+# Update GeoJSON
 
-# on:
-#   schedule:
-#     # * is a special character in YAML so you have to quote this string
-#     - cron:  '5/5 * * * *'
-# # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
-# name: Update geoJSON.geojson
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '5/5 * * * *'
+# https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
+name: Update geoJSON.geojson
 
 
-# on:
-#   schedule: 
-#     - cron:  '0,15,30,45 * * * *'
+jobs: 
+  run:
+    runs-on: windows-latest
 
-# jobs: 
-#   run:
-#     runs-on: windows-latest
-
-#     steps:
-#     - uses: actions/checkout@v2
-#     - name: Set up Python
-#       uses: actions/setup-python@v1
-#       with:
-#         python-version: '3.7.9'
-#     - name: Install dependencies
-#       run: |
-#         python -m pip install --upgrade pip
-#         pip install -r requirements.txt
-#         python update.py
-        
-#     - name: Commit files
-#       id: commit
-#       run: |
-#         git config --local user.email "action@github.com"
-#         git config --local user.name "github-actions"
-#         git add --all
-#         if [ -z "$(git status --porcelain)" ]; then
-#            echo "::set-output name=push::false"
-#         else
-#            git commit -m "Add changes" -a
-#            echo "::set-output name=push::true"
-#         fi
-#       shell: bash
-#     - name: Push changes
-#       if: steps.commit.outputs.push == 'true'
-#       uses: ad-m/github-push-action@master
-#       with:
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.7.9'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt  
+        python update.py
+# install modules from requirement text file: https://packaging.python.org/en/latest/tutorials/installing-packages/
+    # - name: Commit files
+    #   id: commit
+    #   run: |
+    #     git config --local user.email "action@github.com"
+    #     git config --local user.name "github-actions"
+    #     git add --all
+    #     if [ -z "$(git status --porcelain)" ]; then
+    #        echo "::set-output name=push::false"
+    #     else
+    #        git commit -m "Add changes" -a
+    #        echo "::set-output name=push::true"
+    #     fi
+    #   shell: bash
+    # - name: Push changes
+    #   if: steps.commit.outputs.push == 'true'
+    #   uses: ad-m/github-push-action@master
+    #   with:
+    #      github_token: ${{ secrets.GITHUB_TOKEN }}
 
