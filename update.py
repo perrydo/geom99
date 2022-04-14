@@ -24,7 +24,7 @@ ontarioraw = open("ontario.geojson", "r")
 ontario = json.load(ontarioraw)
 treedataraw = open("originaltreedata.geojson", "r")
 treedata = json.load(treedataraw)
-output = open("treedata.geojson", "w")
+output = open("treedata2.geojson", "w")
 
 feature_collection = {"type": "FeatureCollection",
                       "name": "Significant Native Trees in Ontario",
