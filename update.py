@@ -24,10 +24,10 @@ print("done")
 
 # setting up the filer to ensure all trees are within Ontario
 ontarioraw = open("ontario.geojson", "r")
-ontario = json.load(ontarioraw)
+ontario = json.load(ontarioraw) # boundary of Ontario
 treedataraw = open("originaltreedata.geojson", "r")
-treedata = json.load(treedataraw)
-output = open("treedata.geojson", "w")
+treedata = json.load(treedataraw) # data pulled directly from kobo toolbox
+output = open("treedata2.geojson", "w") # data after being put through the filter
 
 feature_collection = {"type": "FeatureCollection",
                       "name": "Significant Native Trees in Ontario",
