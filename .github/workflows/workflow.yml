@@ -3,7 +3,7 @@
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '5/5 * * * *'
+    - cron:  '5,5 * * * *'
 # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
 name: Update geoJSON.geojson
 
