@@ -2,3 +2,5 @@ geojson
 shapely
 requests
 jsonschema
+json 
+operator
