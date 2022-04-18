@@ -2,3 +2,4 @@ json
 shapely
 requests
 jsonschema
+geojson
