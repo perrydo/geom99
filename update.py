@@ -1,6 +1,6 @@
 # set up filter
 # test - remove geojson from import to test yml
-import json
+import geojson, json
 from operator import contains
 from shapely.geometry import shape
 from shapely.geometry.point import Point
