@@ -27,7 +27,7 @@
     <div id="map"></div>
     <script>
         // setting up base map
-        var map = L.map('map', {doubleClickZoom: false}).locate({setView: true, maxZoom: 11});
+        var map = L.map('map', {doubleClickZoom: false}).locate({setView: true, maxZoom: 10});
 
         var tiles = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoicGVycnlkbyIsImEiOiJjbDE0bTJjaWkwd2hoM2twMzJueWc2Ymt2In0.9woaI4P-Kk6VLGUqCEyEXQ', {
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
