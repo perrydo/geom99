@@ -21,6 +21,19 @@
             height: 100%;
             width: 100%;
         }
+        #textbox {
+            position: relative;
+            bottom: 15%;
+            left: 50%;
+            background-color: rgba(255, 255, 255, 0.767);
+            border-radius: 20px;
+            padding: 5px;
+            max-width: 140px;
+        }
+
+        #map {
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
@@ -113,6 +126,8 @@
         var filter = L.control.layers(basemap, choices).addTo(map);
 
     </script>
-
+    <div id="textbox"> 
+        <p><a href="https://ee.humanitarianresponse.info/x/tANahQQA">Click here to submit significant trees!</a></p>
+    </div>
 </body>
 </htm>
